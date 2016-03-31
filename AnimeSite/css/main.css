@@ -1,0 +1,23 @@
+body {
+	background-image : url(../img/anime-fon.jpg);
+}
+
+.left {
+	margin: 0 auto;
+    height:800px;
+}
+
+.right {
+	margin: 0 auto;
+    height:90%;
+}
+
+.center{
+	margin: 0 auto;
+    height:90%;
+}
+
+.main_body{
+	margin: 10px auto;
+    height: auto;
+}
