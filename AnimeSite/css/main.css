@@ -4,17 +4,20 @@ body {
 
 .left {
 	margin: 0 auto;
-    height:800px;
+    height:100%;
+	background-color: blue;
 }
 
 .right {
 	margin: 0 auto;
-    height:90%;
+    height:100%;
+	background-color: red;
 }
 
-.center{
+.centerr{
 	margin: 0 auto;
-    height:90%;
+    height:100%;
+	background-color: green;
 }
 
 .main_body{
