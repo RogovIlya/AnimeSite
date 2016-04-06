@@ -19,11 +19,31 @@ body {
 .centerr{
 	margin: 0 auto;
     height:100%;
-	background-color: green;
+	background-color: white;
 	border-radius: 10px
 }
 
 .main_body{
 	margin: 10px auto;
     height: auto;
+}
+
+.no-margin {
+	margin: 0 !important
+}
+
+.no-padding {
+	padding: 0 !important
+}
+
+.img-main{
+	width: 280px;
+}
+
+.pull-left {
+  float: left;
+}
+
+ .clip {
+	height: 200px;
 }
