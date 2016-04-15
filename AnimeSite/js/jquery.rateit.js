@@ -218,10 +218,41 @@
                 if (!ltr) { offsetx = range.width() - offsetx };
                 if (offsetx > range.width()) { offsetx = range.width(); }
                 if (offsetx < 0) { offsetx = 0; }
-
+				
                 return score = Math.ceil(offsetx / itemdata('starwidth') * (1 / itemdata('step')));
             };
-
+			
+			var getDecimal = function(num)
+			{
+				return num.toString().split(/\.|\,/)[1];	
+			}
+			
+			var getRank = function(num)
+			{
+					var arr = (num+"").split(/\.|\,/);
+					//console.log("arr = "+arr)
+					if(arr.length == 2)
+					{
+						return  arr[1];
+					}
+			
+					return  "0";
+			}
+			
+			var formatNumber = function(num)
+			{		
+					var rank =  getRank(itemdata('step'));
+					var numRank = getRank(num);
+					var rankLength = rank.length;
+					
+					if( numRank == "0")
+					{
+						rankLength = 0;
+					}
+					
+					return num.toFixed(rankLength);
+			}
+			
             //sets the hover element based on the score.
             var setHover = function (score) {
                 var w = score * itemdata('starwidth') * itemdata('step');
@@ -229,21 +260,22 @@
                 if (h.data('width') != w) {
                     range.find('.rateit-selected').hide();
                     h.width(w).show().data('width', w);
-                    var data = [(score * itemdata('step')) + itemdata('min')];
-                    item.trigger('hover', data).trigger('over', data);
+				    var data = (score * itemdata('step')) + itemdata('min');
+					//console.log(" ; itemdata('min') = "+itemdata('min')+" ; itemdata('step')) = "+itemdata('step')+" ; score = "+score+" ; data = "+formatNumber(data))
+                    item.trigger('hover', data).trigger('over', formatNumber(data));
                 }
             };
 
             var setSelection = function (value) {
                 var event = $.Event('beforerated');
-                item.trigger(event, [value]);
+                item.trigger(event, [formatNumber(value)]);
                 if (event.isDefaultPrevented()) {
                     return false;
                 }
 
-                itemdata('value', value);
+                itemdata('value', formatNumber(value));
                 if (itemdata('backingfld')) {
-                    $(itemdata('backingfld')).val(value).trigger('change');
+                    $(itemdata('backingfld')).val(formatNumber(value)).trigger('change');
                 }
                 if (itemdata('ispreset')) { //if it was a preset value, unset that.
                     range.find('.rateit-selected').removeClass(presetclass);
@@ -251,7 +283,8 @@
                 }
                 range.find('.rateit-hover').hide();
                 range.find('.rateit-selected').width(value * itemdata('starwidth') - (itemdata('min') * itemdata('starwidth'))).show();
-                item.trigger('hover', [null]).trigger('over', [null]).trigger('rated', [value]);
+				//console.log("value = "+formatNumber(value))
+                item.trigger('hover', [null]).trigger('over', [null]).trigger('rated', [formatNumber(value),itemdata('max')]);
                 return true;
             };
 
@@ -334,6 +367,6 @@
     $.fn.rateit.defaults = { min: 0, max: 5, step: 0.5, starwidth: 16, starheight: 16, readonly: false, resetable: true, ispreset: false };
 
     //invoke it on all .rateit elements. This could be removed if not wanted.
-    $(function () { $('div.rateit, span.rateit').rateit(); });
+    //$(function () { $('div.rateit, span.rateit').rateit(); });
 
 })(jQuery);

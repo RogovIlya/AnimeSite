@@ -59,6 +59,17 @@ body {
 	
 }
 
+.news-header-panel{
+	background-color: blueviolet;
+	background: url(../img/one_piece_cover5.jpg);
+    /* -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover; */
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+
 .category{
 	/* padding-top: 10px; */
 	/* background-color: #f5f5f5;
@@ -81,4 +92,87 @@ body {
 
 .news-footer{ 
 	/* text-align: right; */
+	background-color: blueviolet;
 }
+
+.rating_help {
+    /* display: inline-block; /* Строчно-блочный элемент */ */
+    position: relative; /* Относительное позиционирование */
+}
+   .rating_help:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; bottom: -28px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(0,42,167,0.6); /* Полупрозрачный цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+}
+   
+.value_rating{
+		font-weight: bold;
+}
+	 
+.scan{
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    /* cursor: pointer; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	color: #fff; 
+    background-color: #5cb85c; 
+    border-color: #4cae4c; 
+}
+
+.news-panel{
+  
+  width:90%;
+  height:90%;
+
+  transition: width 1s;
+  -moz-transition: width 1s; /* Firefox 4 */
+  -webkit-transition: width 1s; /* Safari and Chrome */
+  -o-transition: width 1s; /* Opera */
+  -ms-transition: width 1s; /* IE9 (maybe) */
+  
+}
+
+.news-panel:hover
+{
+    width:100%;
+    height: 100%;
+}
+
+.plus{
+	background-color: blueviolet;
+	background: url(../img/plus.jpg);
+    /* -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover; */
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: content;
+}
+
+.plus-div{
+	
+}
+   
