@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="&#x421;&#x43B;&#x43E;&#x439;_1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="60px"
+	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="30.0005" y1="59" x2="30.0005" y2="1.0005">
+		<stop  offset="0" style="stop-color:#2CBF6C"/>
+		<stop  offset="1" style="stop-color:#85D180"/>
+	</linearGradient>
+	<path  style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);" d="M30,59C14.009,59,1,45.99,1,30C1,14.009,14.009,1,30,1
+		c15.99,0,29,13.009,29,29C59,45.99,45.99,59,30,59L30,59z"/>
+	<radialGradient id="SVGID_2_" cx="30" cy="30.6445" r="31.7401" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.7815" style="stop-color:#5AFFB0;stop-opacity:0.15"/>
+		<stop  offset="0.8889" style="stop-color:#5AFFB0;stop-opacity:0.6512"/>
+		<stop  offset="1" style="stop-color:#5AFFB0;stop-opacity:0.95"/>
+	</radialGradient>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);" d="M30,59C14.009,59,1,45.99,1,30C1,14.009,14.009,1,30,1
+		c15.99,0,29,13.009,29,29C59,45.99,45.99,59,30,59L30,59z"/>
+	<path style="fill:#FFFFFF;" d="M30,2c15.439,0,28,12.561,28,28S45.439,58,30,58S2,45.439,2,30S14.561,2,30,2 M30,0
+		C13.432,0,0,13.432,0,30s13.432,30,30,30s30-13.432,30-30S46.568,0,30,0L30,0z"/>
+</g>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="17.5" y1="30" x2="42.5" y2="30">
+	<stop  offset="0" style="stop-color:#5E98D1"/>
+	<stop  offset="1" style="stop-color:#3E7DBF"/>
+</linearGradient>
+<path style="fill:url(#SVGID_3_);stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;" d="M30,17.5v25
+	 M17.5,30h25"/>
+</svg>

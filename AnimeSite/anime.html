@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>  
+<!DOCTYPE html>  
 <html lang="ru">
 	<head>  
 		<meta charset="utf-8">
@@ -12,14 +12,20 @@
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/jquery.bootgrid.min.css" rel="stylesheet">
 		<link href="css/rateit.css" rel="stylesheet">
+		<link href="css/anime.css" rel="stylesheet">
+		<link href="css/jquery-ui.min.css" rel="stylesheet">
+
 		
 		<script src="js/jquery-2.2.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.bootgrid.min.js"></script>
 		<script src="js/jquery.dotdotdot.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/anime.js"></script>
 		<script src="js/rating.js"></script>
 		<script src="js/jquery.rateit.js"></script>
+		<script src="js/uppod-0.6.3.js"></script>
+		<script type="text/javascript" src="js/swfobject.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -64,13 +70,13 @@
 							</div>
 						</div>
 						<div class="col-md-6 text-left nopadding">
-							<div class = "news panel news-panel">
+							<div class = "news panel">
 								<div class="news-header-panel panel-heading" >
-									<a class="btn" href="anime.html" role="button" style = "text-align:left;color: white;">
+									<a class="btn" href="#" role="button" style = "text-align:left;color: white;">
 										<b>ONE PIECE (ВАН ПИС)</b>
 									</a>
 								</div>
-								<div class="news-body" style="display: none;">
+								<div class="news-body">
 									<div class="container-fluid">
 										<div class="row-fluid news-header">
 											<div class = "col-md-* nopadding category ">
@@ -88,13 +94,13 @@
 										</div>
 										<div class="row-fluid">
 											<div class="col-md-4 nopadding img-body">
-												<a href="anime.html">
+												<a href="#">
 													<img src="img/one_piece.jpg" alt="name" class="img-rounded img-header">
 												</a>
 												<div class ="rating">
 													<h4>Рейтинг:&nbsp;<span class = "value_rating"></span>/<span class="value_rating_max"></span></h4>
 													<input type="hidden" value="4" id="value_rating">
-													<div class="rateit" data-rateit-backingfld="#value_rating" data-rateit-readonly="true" data-rateit-resetable="false" data-productid="312" data-rateit-step="0.1" data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="10"></div>
+													<div class="rateit" data-rateit-backingfld="#value_rating" data-rateit-resetable="false" data-productid="312" data-rateit-step="0.1" data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="10"></div>
 												<!--h4>Ваша оценка:&nbsp;<span class = "value_hover"></span></h4-->
 												</div>
 											</div>
@@ -147,17 +153,31 @@
 											Но с каждым годом романтиков становилось все меньше, их постепенно вытесняли прагматичные пираты-разбойники, которым награбленное добро было куда ближе, чем какие-то «никчемные мечты». Но вот... 
 											</div>
 										</div>
+										<div class="row-fluid">
+											<div class="descripts">
+												<p class="reason">Добавлена 3 серия</p>
+											</div>
+										</div>
+										<div class="row-fluid player" id="videoplayer">
+											<script type="text/javascript"> 
+											   var flashvars = {}; 
+											   var params = {bgcolor:"#ffffff", wmode:"window", allowFullScreen:"true", allowScriptAccess:"always"}; 
+											   swfobject.embedSWF("uppod.swf", "videoplayer", "500", "100", "10.0.0.0", false, flashvars, params); 
+											</script>
+										<!--iframe  src="https://www.rutube.ru/play/embed/4847725" frameborder="0" allowfullscreen></iframe-->
+										
+										</div>
 									</div>	
 								</div>
 								<div class="news-footer panel-footer">
-									<div class = "plus-div">
+									<!--div class = "plus-div">
 										<div class="plus">
 										<!--img src="img/plus.jpg" alt="" class="img-circle"-->
-										</div>
+										<!--/div>
 									</div>
 									<div class="container-fluid nopadding">
 										<div class="row-fluid" style="margin-top: -20px;">
-											<a href="anime.html" class="btn btn-primary btn-md" role="button">
+											<a href="#" class="btn btn-primary btn-md" role="button">
 													<b>Смотреть</b>
 													<span class="badge">3</span>
 											</a>
@@ -176,7 +196,7 @@
 												</li>
 											</ul>
 										</div>
-									</div>
+									</div-->
 								</div>
 							</div>
 							<br>
