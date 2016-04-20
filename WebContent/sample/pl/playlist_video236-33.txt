@@ -1,0 +1,3 @@
+{"playlist":[
+{"comment":"youtube","file":"https://youtu.be/qqFUnmYkVps"},
+{"comment":"rutube","file":"https://rutube.ru/video/02233cbf754a4d743286a0d8fb0ece89"}]}
