@@ -1,0 +1,9 @@
+target/
+log/
+*.md
+.project
+.settings/
+.classpath
+.metadata
+bin/
+build/
