@@ -24,8 +24,9 @@
 		<script src="js/anime.js"></script>
 		<script src="js/rating.js"></script>
 		<script src="js/jquery.rateit.js"></script>
-		<script src="js/uppod-0.6.3.js"></script>
 		<script type="text/javascript" src="js/swfobject.js"></script>
+		<script src='js/uppod.js' type='text/javascript'></script>
+		<script src='js/video236-231.js' type='text/javascript'></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -159,10 +160,13 @@
 											</div>
 										</div>
 										<div class="row-fluid player" id="videoplayer">
-											<script type="text/javascript"> 
-											   var flashvars = {}; 
-											   var params = {bgcolor:"#ffffff", wmode:"window", allowFullScreen:"true", allowScriptAccess:"always"}; 
-											   swfobject.embedSWF("uppod.swf", "videoplayer", "500", "100", "10.0.0.0", false, flashvars, params); 
+											<script type="text/javascript">
+												this.player = new Uppod({
+													st:"uppodvideo",
+													m:"video",
+													uid:"videoplayer",
+													pl:"pl/playlist.json",
+													comment:"test1111"});
 											</script>
 										<!--iframe  src="https://www.rutube.ru/play/embed/4847725" frameborder="0" allowfullscreen></iframe-->
 										
